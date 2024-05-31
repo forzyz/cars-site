@@ -7,11 +7,12 @@ const CustomButton = ({
   title,
   containerStyles,
   handleClick,
+  btnType
 }: CustomButtonProps) => {
   return (
     <button
       disabled
-      type={"button"}
+      type={btnType || "button"}
       className={`custom-btn cursor-pointer ${containerStyles}`}
       onClick={handleClick}
     >
