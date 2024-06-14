@@ -65,7 +65,7 @@ const SearchBar = () => {
         <SearchButton otherClasses="sm:hidden" />
       </div>
 
-      <div className="searchbar__item">
+      <div className="searchbar__item self-start">
         <Image
           src="/model-icon.png"
           width={25}
@@ -81,9 +81,9 @@ const SearchBar = () => {
           placeholder="Tiguan"
           className="searchbar__input"
         />
-        <SearchButton otherClasses="sm:hidden" />
+        <SearchButton otherClasses="sm:hidden self-start" />
       </div>
-      <SearchButton otherClasses="max-sm:hidden" />
+      <SearchButton otherClasses="max-sm:hidden self-start" />
     </form>
   );
 };
