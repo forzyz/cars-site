@@ -6,13 +6,9 @@ import {
   ShowMoreButton,
 } from "@/components";
 import { fuels, yearsOfProduction } from "@/constants";
-import { FilterProps } from "@/types";
+import { FilterProps, HomeProps } from "@/types";
 import { fetchCars } from "@/utils";
 import Image from "next/image";
-
-interface HomeProps {
-  searchParams: FilterProps;
-}
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
