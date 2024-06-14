@@ -31,7 +31,7 @@ const SearchManifacturer = ({
         );
 
   return (
-    <div className="search-manifacturer">
+    <div className={"search-manifacturer w-full"}>
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           <ComboboxButton className={"absolute top-[14px]"}>
@@ -60,7 +60,7 @@ const SearchManifacturer = ({
           >
             <ComboboxOptions>
               {typeof filteredManufacturers !== "string"
-                ? filteredManufacturers.map((item) => (
+                ? filteredManufacturers?.map((item) => (
                     <ComboboxOption
                       value={item}
                       key={item}
